@@ -1,0 +1,1 @@
+INSERT INTO cat(name, age) values("Misse", 2);

@@ -9,6 +9,15 @@ public class Cat {
     @Column(name = "id", nullable = false)
     private Long id;
     private String name;
+    private int age;
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 
     public Long getId() {
         return id;
