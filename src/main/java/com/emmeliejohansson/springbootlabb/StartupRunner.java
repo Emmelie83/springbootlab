@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.logging.Logger;
 
-@Component
+//@Component
 public class StartupRunner implements ApplicationRunner {
     private static final Logger LOG
             = Logger.getLogger(StartupRunner.class.getName());
