@@ -18,16 +18,16 @@ public class StartupApplicationListener {
     public StartupApplicationListener(CatRepository catRepository) {
         this.catRepository = catRepository;
     }
-    @EventListener
-    @Transactional
-    public void onApplicationEvent(ContextRefreshedEvent event) {
-        LOG.info("Checking for Misse");
-        var result = catRepository.findByName("Misse");
-        if (result.isEmpty()) {
-            var cat = new Cat();
-            cat.setName("Misse");
-            cat.setAge(2);
-            catRepository.save(cat);
-        }
-    }
+//    @EventListener
+//    @Transactional
+//    public void onApplicationEvent(ContextRefreshedEvent event) {
+//        LOG.info("Checking for Misse");
+//        var result = catRepository.findByName("Misse");
+//        if (result.isEmpty()) {
+//            var cat = new Cat();
+//            cat.setName("Misse");
+//            cat.setAge(2);
+//            catRepository.save(cat);
+//        }
+//    }
 }
